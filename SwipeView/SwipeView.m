@@ -985,6 +985,11 @@
         [self loadViewAtIndex:index];
     }
 }
+    
+- (void)addGestureEvent:(UIView*)view
+{
+    [view addGestureRecognizer:_scrollView.panGestureRecognizer];
+}
 
 - (void)reloadData
 {
